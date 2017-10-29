@@ -55,9 +55,9 @@ All clusters will have `ISClusterAnnotation` class, so when MKMapView delegate m
 
     - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
    	if ([annotation isKindOfClass:ISClusterAnnotation.class]) {
-        	return [self.clusteringManager clusterAnnotationViewWithAnnotation:annotation onMapView:mapView];
+            return [self.clusteringManager clusterAnnotationViewWithAnnotation:annotation onMapView:mapView];
     	} else {
-		NSLog(@"Normal annotation");
+	    NSLog(@"Normal annotation");
 	}
 		
 	...
