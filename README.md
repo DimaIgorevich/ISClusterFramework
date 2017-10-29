@@ -53,17 +53,15 @@ Implement MKMapView delegate method `mapView:regionDidChangeAnimated:` to displa
 
 All clusters will have `ISClusterAnnotation` class, so when MKMapView delegate methods are called, you can check if current annotation is cluster by checking its class. For example:
 
-    - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-   	if ([annotation isKindOfClass:ISClusterAnnotation.class]) {
-            return [self.clusteringManager clusterAnnotationViewWithAnnotation:annotation onMapView:mapView];
-    	} else {
-	    NSLog(@"Normal annotation");
-	}
-		
-	...
-		
-    return nil;
-    }
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+if ([annotation isKindOfClass:ISClusterAnnotation.class]) {
+return [self.clusteringManager clusterAnnotationViewWithAnnotation:annotation onMapView:mapView];
+} else {
+NSLog(@"Normal annotation");
+}
+...	
+return nil;
+}
 
 **Important:** Call the method of clusterManager `clusterAnnotationViewWithAnnotationonMapView:` whenever you want to visible cluster view on map.
 
