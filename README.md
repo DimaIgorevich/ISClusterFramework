@@ -82,12 +82,12 @@ Implement MKMapView delegate method `mapView:didSelectAnnotationView:` to show c
 
 You can configurate cluster view in next params:
 
-- [x] DisplayBackgroundStyle (default ISDisplayBackgroundStyleSolid)
-- [x] MarkerBackgroundColor
-- [x] MarkerBorderColor
-- [x] MarkerTextColor
-- [x] MarkerFont
-- [x] MarkerScaleFactor (default alpha = 0.3f delpha = 0.4f)
++ DisplayBackgroundStyle (default ISDisplayBackgroundStyleSolid)
++ MarkerBackgroundColor
++ MarkerBorderColor
++ MarkerTextColor
++ MarkerFont
++ MarkerScaleFactor (default alpha = 0.3f delpha = 0.4f)
 
 ## Requirements
 
