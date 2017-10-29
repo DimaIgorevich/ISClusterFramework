@@ -22,8 +22,8 @@ Create your clustering manager:
 	self.clusteringManager = [[ISClusteringManager alloc] init];
 
 ### Step 2: Configurate a ClusterManager object
-
-	self.clusteringManager.displaySettings.markerFont = [UIFont systemFontOfSize:14.f];
+	
+		self.clusteringManager.displaySettings.markerFont = [UIFont systemFontOfSize:14.f];
     	self.clusteringManager.displaySettings.markerBorderColor = [UIColor whiteColor];
     	self.clusteringManager.displaySettings.markerTextColor = [UIColor whiteColor];
     	self.clusteringManager.displaySettings.displayBackgroundStyle = ISDisplayBackgroundStyleSolid;
