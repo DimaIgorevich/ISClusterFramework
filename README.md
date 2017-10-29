@@ -53,17 +53,17 @@ Implement MKMapView delegate method `mapView:regionDidChangeAnimated:` to displa
 
 All clusters will have `ISClusterAnnotation` class, so when MKMapView delegate methods are called, you can check if current annotation is cluster by checking its class. For example:
 
-	- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    		if ([annotation isKindOfClass:ISClusterAnnotation.class]) {
-        		return [self.clusteringManager clusterAnnotationViewWithAnnotation:annotation onMapView:mapView];
-    		} else {
-			NSLog(@"Normal annotation");
-		}
-		
-		...
-		
-    	return nil;
+    - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+   	if ([annotation isKindOfClass:ISClusterAnnotation.class]) {
+        	return [self.clusteringManager clusterAnnotationViewWithAnnotation:annotation onMapView:mapView];
+    	} else {
+		NSLog(@"Normal annotation");
 	}
+		
+	...
+		
+    return nil;
+    }
 
 **Important:** Call the method of clusterManager `clusterAnnotationViewWithAnnotationonMapView:` whenever you want to visible cluster view on map.
 
@@ -71,11 +71,11 @@ All clusters will have `ISClusterAnnotation` class, so when MKMapView delegate m
 
 Implement MKMapView delegate method `mapView:didSelectAnnotationView:` to show cluster view with grouped annotations on the map. An example of implementation:
 
-	- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view NS_AVAILABLE(10_9, 4_0) {
-   		if ([view isKindOfClass:ISClusterAnnotationView.class]) {
-        		[self.vMap showClusterView:view animated:YES];
-    		}
-	}
+    - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view NS_AVAILABLE(10_9, 4_0) {
+   	if ([view isKindOfClass:ISClusterAnnotationView.class]) {
+        	[self.vMap showClusterView:view animated:YES];
+    	}
+    }
 	
 ## Additionals
 
