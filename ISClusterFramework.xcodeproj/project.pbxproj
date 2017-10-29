@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		322530F61FA640B30020C05F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 322530F51FA640B30020C05F /* AppDelegate.m */; };
+		322530FC1FA640B30020C05F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322530FA1FA640B30020C05F /* Main.storyboard */; };
+		322530FE1FA640B30020C05F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 322530FD1FA640B30020C05F /* Assets.xcassets */; };
+		322531011FA640B30020C05F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 322530FF1FA640B30020C05F /* LaunchScreen.storyboard */; };
+		322531041FA640B30020C05F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 322531031FA640B30020C05F /* main.m */; };
+		3225311B1FA641510020C05F /* ISClusterAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225310E1FA641510020C05F /* ISClusterAnnotationView.m */; };
+		3225311C1FA641510020C05F /* ISClusterDisplaySetting.m in Sources */ = {isa = PBXBuildFile; fileRef = 322531101FA641510020C05F /* ISClusterDisplaySetting.m */; };
+		3225311D1FA641510020C05F /* ISClusterAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 322531121FA641510020C05F /* ISClusterAnnotation.m */; };
+		3225311E1FA641510020C05F /* ISClusteringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 322531141FA641510020C05F /* ISClusteringManager.m */; };
+		3225311F1FA641510020C05F /* ISQuadTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 322531181FA641510020C05F /* ISQuadTree.m */; };
+		322531201FA641510020C05F /* ISQuadTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225311A1FA641510020C05F /* ISQuadTreeNode.m */; };
+		322531271FA643DA0020C05F /* ISMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 322531261FA643DA0020C05F /* ISMapViewController.m */; };
+		3225312A1FA643E20020C05F /* ISAnnotaionLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 322531291FA643E20020C05F /* ISAnnotaionLocation.m */; };
+		3225312E1FA646830020C05F /* MKMapView+ISCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = 3225312D1FA646830020C05F /* MKMapView+ISCluster.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		322530F11FA640B30020C05F /* ISClusterFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISClusterFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		322530F41FA640B30020C05F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		322530F51FA640B30020C05F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		322530FB1FA640B30020C05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		322530FD1FA640B30020C05F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		322531001FA640B30020C05F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		322531021FA640B30020C05F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322531031FA640B30020C05F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3225310D1FA641510020C05F /* ISClusterAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISClusterAnnotationView.h; sourceTree = "<group>"; };
+		3225310E1FA641510020C05F /* ISClusterAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISClusterAnnotationView.m; sourceTree = "<group>"; };
+		3225310F1FA641510020C05F /* ISClusterDisplaySetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISClusterDisplaySetting.h; sourceTree = "<group>"; };
+		322531101FA641510020C05F /* ISClusterDisplaySetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISClusterDisplaySetting.m; sourceTree = "<group>"; };
+		322531111FA641510020C05F /* ISClusterAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISClusterAnnotation.h; sourceTree = "<group>"; };
+		322531121FA641510020C05F /* ISClusterAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISClusterAnnotation.m; sourceTree = "<group>"; };
+		322531131FA641510020C05F /* ISClusteringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISClusteringManager.h; sourceTree = "<group>"; };
+		322531141FA641510020C05F /* ISClusteringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISClusteringManager.m; sourceTree = "<group>"; };
+		322531151FA641510020C05F /* ISClusterMapFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISClusterMapFramework.h; sourceTree = "<group>"; };
+		322531171FA641510020C05F /* ISQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISQuadTree.h; sourceTree = "<group>"; };
+		322531181FA641510020C05F /* ISQuadTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISQuadTree.m; sourceTree = "<group>"; };
+		322531191FA641510020C05F /* ISQuadTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISQuadTreeNode.h; sourceTree = "<group>"; };
+		3225311A1FA641510020C05F /* ISQuadTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISQuadTreeNode.m; sourceTree = "<group>"; };
+		322531251FA643DA0020C05F /* ISMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISMapViewController.h; sourceTree = "<group>"; };
+		322531261FA643DA0020C05F /* ISMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISMapViewController.m; sourceTree = "<group>"; };
+		322531281FA643E20020C05F /* ISAnnotaionLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISAnnotaionLocation.h; sourceTree = "<group>"; };
+		322531291FA643E20020C05F /* ISAnnotaionLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISAnnotaionLocation.m; sourceTree = "<group>"; };
+		3225312C1FA646830020C05F /* MKMapView+ISCluster.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ISCluster.h"; sourceTree = "<group>"; };
+		3225312D1FA646830020C05F /* MKMapView+ISCluster.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ISCluster.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		322530EE1FA640B30020C05F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		322530E81FA640B30020C05F = {
+			isa = PBXGroup;
+			children = (
+				322530F31FA640B30020C05F /* ISClusterFramework */,
+				322530F21FA640B30020C05F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		322530F21FA640B30020C05F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				322530F11FA640B30020C05F /* ISClusterFramework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		322530F31FA640B30020C05F /* ISClusterFramework */ = {
+			isa = PBXGroup;
+			children = (
+				3225310A1FA641510020C05F /* Core */,
+				322531221FA6431E0020C05F /* Example */,
+				322531211FA641A80020C05F /* SupportFiles */,
+				322530F41FA640B30020C05F /* AppDelegate.h */,
+				322530F51FA640B30020C05F /* AppDelegate.m */,
+			);
+			path = ISClusterFramework;
+			sourceTree = "<group>";
+		};
+		3225310A1FA641510020C05F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3225312B1FA646360020C05F /* Category */,
+				3225310B1FA641510020C05F /* Algorithm */,
+				3225310C1FA641510020C05F /* AnnotationVIew */,
+				322531111FA641510020C05F /* ISClusterAnnotation.h */,
+				322531121FA641510020C05F /* ISClusterAnnotation.m */,
+				322531131FA641510020C05F /* ISClusteringManager.h */,
+				322531141FA641510020C05F /* ISClusteringManager.m */,
+				322531151FA641510020C05F /* ISClusterMapFramework.h */,
+				322531161FA641510020C05F /* Tree */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3225310B1FA641510020C05F /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		3225310C1FA641510020C05F /* AnnotationVIew */ = {
+			isa = PBXGroup;
+			children = (
+				3225310D1FA641510020C05F /* ISClusterAnnotationView.h */,
+				3225310E1FA641510020C05F /* ISClusterAnnotationView.m */,
+				3225310F1FA641510020C05F /* ISClusterDisplaySetting.h */,
+				322531101FA641510020C05F /* ISClusterDisplaySetting.m */,
+			);
+			path = AnnotationVIew;
+			sourceTree = "<group>";
+		};
+		322531161FA641510020C05F /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				322531171FA641510020C05F /* ISQuadTree.h */,
+				322531181FA641510020C05F /* ISQuadTree.m */,
+				322531191FA641510020C05F /* ISQuadTreeNode.h */,
+				3225311A1FA641510020C05F /* ISQuadTreeNode.m */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		322531211FA641A80020C05F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				322531031FA640B30020C05F /* main.m */,
+				322531021FA640B30020C05F /* Info.plist */,
+				322530FD1FA640B30020C05F /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		322531221FA6431E0020C05F /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				322531231FA643260020C05F /* Model */,
+				322531241FA6432C0020C05F /* UI */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		322531231FA643260020C05F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				322531281FA643E20020C05F /* ISAnnotaionLocation.h */,
+				322531291FA643E20020C05F /* ISAnnotaionLocation.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		322531241FA6432C0020C05F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				322531251FA643DA0020C05F /* ISMapViewController.h */,
+				322531261FA643DA0020C05F /* ISMapViewController.m */,
+				322530FF1FA640B30020C05F /* LaunchScreen.storyboard */,
+				322530FA1FA640B30020C05F /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3225312B1FA646360020C05F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3225312C1FA646830020C05F /* MKMapView+ISCluster.h */,
+				3225312D1FA646830020C05F /* MKMapView+ISCluster.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		322530F01FA640B30020C05F /* ISClusterFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 322531071FA640B30020C05F /* Build configuration list for PBXNativeTarget "ISClusterFramework" */;
+			buildPhases = (
+				322530ED1FA640B30020C05F /* Sources */,
+				322530EE1FA640B30020C05F /* Frameworks */,
+				322530EF1FA640B30020C05F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ISClusterFramework;
+			productName = ISClusterFramework;
+			productReference = 322530F11FA640B30020C05F /* ISClusterFramework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		322530E91FA640B30020C05F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = InfiroomStudio;
+				TargetAttributes = {
+					322530F01FA640B30020C05F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 322530EC1FA640B30020C05F /* Build configuration list for PBXProject "ISClusterFramework" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 322530E81FA640B30020C05F;
+			productRefGroup = 322530F21FA640B30020C05F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				322530F01FA640B30020C05F /* ISClusterFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		322530EF1FA640B30020C05F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322531011FA640B30020C05F /* LaunchScreen.storyboard in Resources */,
+				322530FE1FA640B30020C05F /* Assets.xcassets in Resources */,
+				322530FC1FA640B30020C05F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		322530ED1FA640B30020C05F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				322531201FA641510020C05F /* ISQuadTreeNode.m in Sources */,
+				3225312E1FA646830020C05F /* MKMapView+ISCluster.m in Sources */,
+				3225311E1FA641510020C05F /* ISClusteringManager.m in Sources */,
+				3225311B1FA641510020C05F /* ISClusterAnnotationView.m in Sources */,
+				3225311D1FA641510020C05F /* ISClusterAnnotation.m in Sources */,
+				322531041FA640B30020C05F /* main.m in Sources */,
+				3225311C1FA641510020C05F /* ISClusterDisplaySetting.m in Sources */,
+				3225312A1FA643E20020C05F /* ISAnnotaionLocation.m in Sources */,
+				3225311F1FA641510020C05F /* ISQuadTree.m in Sources */,
+				322531271FA643DA0020C05F /* ISMapViewController.m in Sources */,
+				322530F61FA640B30020C05F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		322530FA1FA640B30020C05F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				322530FB1FA640B30020C05F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		322530FF1FA640B30020C05F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				322531001FA640B30020C05F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		322531051FA640B30020C05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		322531061FA640B30020C05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		322531081FA640B30020C05F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8FTS9342H;
+				INFOPLIST_FILE = ISClusterFramework/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = InfiroomStudio.ISClusterFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		322531091FA640B30020C05F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8FTS9342H;
+				INFOPLIST_FILE = ISClusterFramework/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = InfiroomStudio.ISClusterFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		322530EC1FA640B30020C05F /* Build configuration list for PBXProject "ISClusterFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322531051FA640B30020C05F /* Debug */,
+				322531061FA640B30020C05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		322531071FA640B30020C05F /* Build configuration list for PBXNativeTarget "ISClusterFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				322531081FA640B30020C05F /* Debug */,
+				322531091FA640B30020C05F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 322530E91FA640B30020C05F /* Project object */;
+}
