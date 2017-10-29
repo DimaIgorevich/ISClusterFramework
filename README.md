@@ -38,8 +38,8 @@ Create your clustering manager:
 	
 Implement MKMapView delegate method `mapView:regionDidChangeAnimated:` to display annotations grouped in clusters on the map. An example of implementation:
 
-	- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
-    		[[NSOperationQueue new] addOperationWithBlock:^{
+    - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
+    [[NSOperationQueue new] addOperationWithBlock:^{
         		double scale = self.vMap.bounds.size.width / self.vMap.visibleMapRect.size.width;
         		NSArray *annotations = [self.clusteringManager 		   
 			clusteredAnnotationsWithinMapRect:self.vMap.visibleMapRect 			
