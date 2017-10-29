@@ -19,16 +19,16 @@ Follow the instructions below:
 
 Create your clustering manager:
 	
-	self.clusteringManager = [[ISClusteringManager alloc] init];
+    self.clusteringManager = [[ISClusteringManager alloc] init];
 
 ### Step 2: Configurate a ClusterManager object
 	
-		self.clusteringManager.displaySettings.markerFont = [UIFont systemFontOfSize:14.f];
-    	self.clusteringManager.displaySettings.markerBorderColor = [UIColor whiteColor];
-    	self.clusteringManager.displaySettings.markerTextColor = [UIColor whiteColor];
-    	self.clusteringManager.displaySettings.displayBackgroundStyle = ISDisplayBackgroundStyleSolid;
-    	self.clusteringManager.displaySettings.markerBackgroundColor = [UIColor orangeColor];
-    	self.clusteringManager.displaySettings.scaleFactor = CGSizeMake(0.9, 1.2f);
+    self.clusteringManager.displaySettings.markerFont = [UIFont systemFontOfSize:14.f];
+    self.clusteringManager.displaySettings.markerBorderColor = [UIColor whiteColor];
+    self.clusteringManager.displaySettings.markerTextColor = [UIColor whiteColor];
+    self.clusteringManager.displaySettings.displayBackgroundStyle = ISDisplayBackgroundStyleSolid;
+    self.clusteringManager.displaySettings.markerBackgroundColor = [UIColor orangeColor];
+    self.clusteringManager.displaySettings.scaleFactor = CGSizeMake(0.9, 1.2f);
 
 ### Step 3: Add annotations
 
