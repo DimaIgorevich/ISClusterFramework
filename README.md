@@ -3,11 +3,11 @@ Cluster pins on MapView in iOS SDK MapKit which using some clusterManager. It's 
 
 # Example
 
-|(Resources/example0.png)|(Resources/example1.png)|(Resources/example2.png)|
+|![](Resources/example0.png)|![](Resources/example1.png)|![](Resources/example2.png)|
 
 # Installation
 
-You can upload project and just import files from [Core](Core) to your project.
+You can upload project and just import files from [Core](ISClusterFramework/Core) to your project.
 
 In folder Example you can find how configurate MapView with default-settings.
 
