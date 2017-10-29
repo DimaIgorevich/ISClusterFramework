@@ -3,7 +3,7 @@ Cluster pins on MapView in iOS SDK MapKit which using some clusterManager. It's 
 
 # Example
 
-<img src="https://github.com/DimaIgorevich/ISClusterFramework/blob/master/Resources/example0.PNG" width="320">
+<img src="https://github.com/DimaIgorevich/ISClusterFramework/blob/master/Resources/example0.PNG" width="320"> | <img src="https://github.com/DimaIgorevich/ISClusterFramework/blob/master/Resources/example1.PNG" width="320"> | <img src="https://github.com/DimaIgorevich/ISClusterFramework/blob/master/Resources/example2.PNG" width="320">
 
 # Installation
 
